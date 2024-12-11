@@ -32,11 +32,11 @@ export default function RootLayout({
           "container mx-auto min-h-screen"
         )}
       >
-        <div className="py-8 grid gap-8">
+        <div className="py-8 w-full">
           <header>
             <Image src="/header_logo.svg" alt="alt" width={205} height={40} />
           </header>
-          <main>{children}</main>
+          <main className="relative w-full">{children}</main>
         </div>
       </body>
     </html>

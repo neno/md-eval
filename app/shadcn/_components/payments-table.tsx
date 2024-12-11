@@ -154,7 +154,7 @@ export function PaymentsTable({ data }: { data: Payment[] }) {
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter emails..."
@@ -164,7 +164,7 @@ export function PaymentsTable({ data }: { data: Payment[] }) {
           }
           className="max-w-sm"
         />
-        <DropdownMenu>
+        {/* <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="ml-auto">
               Columns <ChevronDown />
@@ -189,9 +189,9 @@ export function PaymentsTable({ data }: { data: Payment[] }) {
                 );
               })}
           </DropdownMenuContent>
-        </DropdownMenu>
+        </DropdownMenu> */}
       </div>
-      <div className="rounded-md border">
+      <div className="rounded-md border w-full">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
